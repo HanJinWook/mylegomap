@@ -6,7 +6,7 @@ import { THEME } from '@/constants/theme';
 interface BrickCardProps {
   accentColor?: 'red' | 'blue' | 'yellow' | 'green';
   title?: React.ReactNode;
-  icon?: React.ReactNode;
+  icon?: React.ReactElement<any>;
   children: React.ReactNode;
   className?: string;
 }
@@ -38,12 +38,12 @@ export default function BrickCard({
 
       {(title || icon) && (
         <div className="flex items-center gap-3">
-          {icon && (
+          {icon && React.isValidElement(icon) && (
             <div 
               className="p-2.5 rounded-xl shadow-sm border-2 border-white/50"
               style={{ backgroundColor: `${accentHex}20` }}
             >
-              {React.cloneElement(icon as React.ReactElement, { 
+              {React.cloneElement(icon as React.ReactElement<any>, { 
                 className: `w-5 h-5`,
                 style: { color: accentHex }
               })}
