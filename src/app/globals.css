@@ -79,15 +79,15 @@ body {
 
 /* Custom Scrollbar for LEGO Style */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: var(--lego-gray);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--lego-yellow);
-  border: 2px solid var(--lego-gray);
-  border-radius: 5px;
+  border: 1px solid var(--lego-gray);
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--lego-red);
