@@ -26,9 +26,9 @@ export default function Home() {
 
   return (
     <main 
-      className="min-h-screen lg:h-screen font-fredoka overflow-x-hidden flex flex-col lego-bg-pattern" 
+      className="min-h-screen font-fredoka overflow-y-auto flex flex-col lego-bg-pattern" 
       style={{ 
-        minHeight: '100dvh',
+        height: '100dvh',
         backgroundColor: THEME.colors.neutral.gray 
       }}
     >

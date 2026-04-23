@@ -19,7 +19,7 @@ export default function DashboardLayout({ viewer, sidebar, uploader }: Dashboard
   return (
     <div className="flex-1 w-full rounded-2xl lg:rounded-[2.5rem] border-4 border-white bg-white/50 backdrop-blur-sm shadow-[0_12px_0_rgba(0,0,0,0.05)] overflow-hidden relative">
       <div 
-        className={`w-full h-full grid ${imageLoaded ? 'lg:grid-cols-[1fr_400px]' : 'grid-cols-1 place-items-center'} gap-6 lg:gap-10 p-4 lg:p-10 overflow-y-auto lg:overflow-hidden content-start`}
+        className={`w-full h-auto grid ${imageLoaded ? 'lg:grid-cols-[1fr_400px]' : 'grid-cols-1 place-items-center'} gap-6 lg:gap-10 p-4 lg:p-10 content-start`}
       >
         {!imageLoaded ? (
           <div className="w-full h-full flex items-center justify-center animate-fade-in py-10">
