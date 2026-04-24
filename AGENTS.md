@@ -6,4 +6,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # Agent Behavior Rules
 
-- **@local Mention**: When a request starts with `@local`, ensure the development process aligns with the local model settings configured at `http://localhost:11434/v1` (qwen3.6:27b). Use this local environment for prompt processing and development as requested by the user.
+- **@local Mention**: When a request starts with `@local`, use the local model environment at `baseUrl: "http://localhost:11434/v1"`for prompt processing and development. This preference is persistent across sessions and must be strictly followed.
