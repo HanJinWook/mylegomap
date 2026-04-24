@@ -15,7 +15,7 @@ export default function RightPanel() {
   if (!imageLoaded) return null;
 
   return (
-    <div className="w-full h-auto lg:h-[calc(100vh-8rem)] flex flex-col gap-6 justify-start animate-fade-in z-10 shrink-0 pb-6">
+    <div className="w-full h-auto lg:h-[calc(100vh-8rem)] flex flex-col gap-6 justify-start animate-fade-in z-10 shrink-0 pb-6 min-w-0">
       {/* 1. New Creation Control */}
       <Uploader />
 
