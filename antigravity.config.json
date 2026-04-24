@@ -13,7 +13,7 @@
     "defaultModel": "local",
     "fallback": {
         "enabled": true,
-        "model": "qwen3.5:35b",
+        "model": "qwen3.6:35b",
         "trigger": "context_exceeded"
     }
 }
