@@ -1,1 +1,1 @@
-{"model": "gemma4:latest", "messages": [{"role": "system", "content": "You are a senior frontend developer."}, {"role": "user", "content": "The user wants to know the command to start the development server and the link to access it. Looking at the package.json, what should they run?"}], "temperature": 0.1}
+{"model": "gemma4:latest", "messages": [{"role": "user", "content": "\ub108 \uc9c0\uae08 \ubb34\uc2a8 \ubaa8\ub378\uc774\uc57c?"}], "temperature": 0.1}
